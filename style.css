@@ -1,0 +1,132 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #4CAF50;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 50px;
+    font-weight: 800;
+    border-bottom: #ccc 2px solid;
+    width: 100%;
+}
+
+form h1{
+    font-size: 20px;
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+
+form {
+    font-family: "Quicksand", sans-serif;
+    width: 70%;
+    margin: 0px 20px 40px 0px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select,
+button {
+    width: 97%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.add-button{
+    width: fit-content;
+    background-color: #ccc;
+    margin-left: 0px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+h2{
+    font-size:18px;
+}
+
+p{
+    font-size: 15px;
+    text-align: justify;
+}
+
+.resume-container {
+    font-family: 'Times New Roman', Times, serif;
+    margin:20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.name{
+    text-align: center;
+    font-size: 20px;
+}
+.contact{
+    text-align: center;
+}
+
+.year{
+    text-align: end;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.education,.experience,.project,.leadership{
+    position: relative;
+
+}
+.dynamic-section{
+    padding-left: 10px;
+}
+
+ul{
+    padding-left: 25px;
+}
+

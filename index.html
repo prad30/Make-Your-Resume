@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <h2 class="title">Make Your Resume</h2>
+    <form>
+        <!-- Contact Information -->
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="linkedin">LinkedIn:</label>
+        <input type="url" id="linkedin" name="linkedin" placeholder="Enter your LinkedIn profile URL">
+
+        <label for="github">Github:</label>
+        <input type="url" id="github" name="github" placeholder="Enter your Github profile URL">
+
+        <label for="portfolio">Portfolio:</label>
+        <input type="url" id="portfolio" name="portfolio" placeholder="Enter your portfolio URL">
+
+        <!-- Professional Summary -->
+        <label for="summary">Professional Summary:</label>
+        <textarea id="summary" name="summary" rows="4" placeholder="Write a brief summary about yourself"></textarea>
+
+        <!-- Skills -->
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills" rows="3" placeholder="List your skills (e.g., Java, Python, Communication)"
+            required></textarea>
+
+        <!-- Education -->
+        <h1>Education</h1>
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" placeholder="Eg: Bachelor of Engineering in Computer Science"
+            required>
+
+        <label for="college">College Name:</label>
+        <input type="text" id="college" name="college" placeholder="Eg: Annamalai University, Tamil Nadu" required>
+
+        <label for="year">Academic Year:</label>
+        <input type="text" id="year" name="year" placeholder="Eg: 2021-2025" required>
+
+        <!-- Work Experience or Internship -->
+        <h1>Work Experience or Internship</h1>
+        <div class="experience-section">
+            <div class="dynamic-section">
+                <label for="role">Role:</label>
+                <input type="text" class="role" name="role"
+                    placeholder="Eg: Software Developer, Machine Learning Intern" required>
+
+                <label for="company-name">Company Name:</label>
+                <input type="text" class="company-name" name="company-name" placeholder="Eg: Accenture, Ineuron"
+                    required>
+
+                <label for="duration">Duration:</label>
+                <input type="text" class="duration" name="duration" placeholder="Eg: July 2023 - Oct 2023" required>
+
+                <label for="internship-summary">Summary of Work/Internship:</label>
+                <textarea class="internship-summary" name="internship-summary" rows="4"
+                    placeholder="Describe your work or internship"></textarea>
+            </div>
+        </div>
+
+        <button class="add-experience add-button">ADD</button>
+
+        <!-- Projects -->
+        <h1>Projects</h1>
+        <div class="projects-section">
+            <div class="dynamic-section">
+                <label for="project-title">Project Title:</label>
+                <input type="text" class="project-title" name="project-title" placeholder="Project Title" required>
+
+                <label for="tools-used">Tools Used:</label>
+                <input type="text" class="tools-used" name="tools-used" placeholder="Technologies used in this project"
+                    required>
+
+                <label for="date">Date:</label>
+                <input type="text" class="date" name="date" placeholder="Eg: July 2023 - Oct 2023" required>
+
+                <label for="description">Description:</label>
+                <textarea class="description" name="description" rows="4" placeholder="About the project"></textarea>
+            </div>
+        </div>
+
+        <button class="add-projects add-button">ADD</button>
+
+        <!-- Certifications -->
+        <h1>Certifications</h1>
+        <div class="certification-section dynamic-section">
+            <div class="dynamic-section">
+                <label for="certification-name">Certification Name:</label>
+                <input type="text" class="certification-name" name="certification-name"
+                    placeholder="Name of the Certificate">
+                <label for="issue-by">Issue By:</label>
+                <input type="text" class="issue-by" name="issue-by" placeholder="Issue By" required>
+            </div>
+        </div>
+
+        <button class="add-certificate add-button">ADD</button>
+
+        <!-- Achievements and Awards -->
+        <div class="achievements-section">
+            <div class="dynamic-section">
+                <label for="achievements">Achievements and Awards:</label>
+                <input type="text" class="achievements" name="achievements"
+                    placeholder="Enter your awards and achievements" required>
+            </div>
+        </div>
+
+        <button class="add-achievements add-button">ADD</button>
+
+        <!-- Leadership and Responsibilities -->
+        <h1>Leadership and Responsibilities</h1>
+        <div class="leaderships-section">
+            <div class="dynamic-section">
+                <label for="position-name">Position Name:</label>
+                <input type="text" class="position-name" name="position-name" placeholder="Enter your position"
+                    required>
+
+                <label for="organisation-name">Organization Name:</label>
+                <input type="text" class="organisation-name" name="organisation-name"
+                    placeholder="Enter organization name" required>
+
+                <label for="period">Duration:</label>
+                <input type="text" class="period" name="period" placeholder="Enter duration" required>
+            </div>
+        </div>
+
+
+        <button class="add-leadership add-button">ADD</button>
+
+        <button type="submit" id="generate-resume">Generate Resume</button>
+    </form>
+
+
+    <div id="resume-container"></div>
+    <div id="download-resume" onclick="downloadResume()">
+
+    </div>
+    <script src="addButton.js"></script>
+    <script src="downloadResume.js"></script>
+    <script src="generateResume.js"></script>
+</body>
+
+</html>
