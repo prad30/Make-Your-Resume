@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }))
         };
 
-        // Generate Resume Content
+        // Generate Content for resume
         const resumeContent = `
     <div>
         <!-- Header Section -->
